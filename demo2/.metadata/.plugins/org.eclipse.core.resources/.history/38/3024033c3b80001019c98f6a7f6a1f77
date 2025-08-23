@@ -1,0 +1,5 @@
+package com.example.Integration.repository;
+
+public interface EmployeeRepository {
+
+}

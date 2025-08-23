@@ -1,0 +1,44 @@
+package com.example.Integration.serviceImpl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.example.Integration.entity.Employee;
+import com.example.Integration.exception.EmployeeNotFoundException;
+import com.example.Integration.repository.EmployeeRepository;
+import com.example.Integration.service.EmployeeService;
+
+@Service
+public class ServiceImpl implements EmployeeService {
+
+    private final EmployeeRepository employeeRepository;
+
+    public ServiceImpl(EmployeeRepository employeeRepository) {
+        this.employeeRepository = employeeRepository;
+    }
+
+    @Override
+    public Optional<Employee> findById(int id) {
+        return employeeRepository.findById(id);
+    }
+
+    @Override
+    public Employee save(Employee emp) {
+        return employeeRepository.save(emp);
+    }
+
+    @Override
+    public void deleteById(int id) {
+        if (!employeeRepository.existsById(id)) {
+            throw new EmployeeNotFoundException("Employee not found with ID: " + id);
+        }
+        employeeRepository.deleteById(id);
+    }
+
+    @Override
+    public List<Employee> findAll() {
+        return employeeRepository.findAll();
+    }
+}

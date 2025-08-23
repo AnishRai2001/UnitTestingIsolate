@@ -1,0 +1,43 @@
+package com.example.Integration.serviceImpl;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.example.Integration.entity.Employee;
+import com.example.Integration.repository.EmployeeRepository;
+import com.example.Integration.responseStructure.ResponseStructure;
+import com.example.Integration.service.EmployeeService;
+
+public class ServiceImpl implements EmployeeService {
+	
+	private EmployeeRepository employeeRepository;
+	
+	public ServiceImpl(EmployeeRepository employeeRepository) {
+		this.employeeRepository=employeeRepository;
+	}
+
+	@Override
+	public Optional<Employee> findById(int id) {
+	    return employeeRepository.findById(id);
+	}
+
+
+	@Override
+	public Employee save(Employee emp) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteById(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Employee> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

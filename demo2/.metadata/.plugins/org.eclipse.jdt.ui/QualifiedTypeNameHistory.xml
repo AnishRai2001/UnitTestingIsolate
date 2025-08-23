@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.foreign.Linker.Option"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.example.Integration.service.EmployeeService"/>
+    <fullyQualifiedTypeName name="com.example.Integration.responseStructure.ResponseStructure"/>
+    <fullyQualifiedTypeName name="com.example.Integration.serviceImpl.ServiceImpl"/>
+    <fullyQualifiedTypeName name="com.example.Integration.repository.EmployeeRepository"/>
+    <fullyQualifiedTypeName name="com.example.Integration.entity.Employee"/>
+    <fullyQualifiedTypeName name="com.example.Integration.Exception.EmployeeNotFoundException"/>
+</qualifiedTypeNameHistroy>
